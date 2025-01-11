@@ -31,5 +31,7 @@ app.get('/dashboard', bearerCookie, dashboard)
 
 app.post('/usuario/logout', logout)
 
-/****************************** se passa username and password no request headers authorization basic ******************************* */
+/* ***************************** passa username and password no request headers authorization basic ******************************* */
+
+/* ****** devolve um cookie com nome jwt, o cookie é http-only, não permite acesso via javascript, assinado, mesmo site, e somente https ***** */
 app.listen(3000, () => console.log(`app is now running on port 3000`))
